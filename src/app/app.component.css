@@ -1,0 +1,66 @@
+.calculator {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+input[type="text"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  border: none;
+  border-radius: 5px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  padding: 15px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:active {
+  transform: translateY(2px);
+}
+
+.operation-add {
+  background-color: #ff9800;
+}
+
+.operation-subtract {
+  background-color: #f44336;
+}
+
+.operation-multiply {
+  background-color: #2196f3;
+}
+
+.operation-divide {
+  background-color: #9c27b0;
+}
+
+.operation-power {
+  background-color: #ffeb3b;
+}
+
+.operation-square-root {
+  background-color: #00bcd4;
+}
